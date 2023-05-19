@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div>
+        <label for="originalCurrency">Original Currency:</label>
+        <select id="originalCurrency">
+            <option value="" disabled selected>--Please choose a starting currency--</option>  
+        </select>
+    </div> 
+    <div>
+        <label for="desiredCurrency">Desired Currency:</label>
+        <select id="desiredCurrency">
+            <option value="" disabled selected>--Please choose a final currency--</option>  
+        </select>
+    </div> 
+    <div>
+        <label for="originalAmount">Amount of Original Currency:</label>
+        <input type="number" id="originalAmount">
+        <span id="errorText" class="error-text"></span>
+    </div>
+
+    <button id="convertButton">Convert</button>
+
+    <div>
+        <label for="convertedAmount">Converted Amount:</label>
+        <span id="convertedAmount"></span>
+    </div>
+</body>
+</html>
